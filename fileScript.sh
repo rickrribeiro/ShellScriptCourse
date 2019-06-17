@@ -10,3 +10,9 @@ cat fileForCat.txt | grep --color "23"
 echo
 echo "Ultimas 10 linhas do arquivo com tail"
 tail fileForCat.txt
+echo
+echo
+echo "|cut -d aspasduplas com o delimitador e -fn ou fn,m,...x ou fn-m(n pra m) pro n que quer ou -b pra caracteres "
+echo "um dois tres quatro cinco" |cut -d" "  -f3,4
+echo "um dois tres quatro cindo" | cut -d " " -f1,2-3,5
+echo "tr pra trocar os espacos por algum caracter (-d deleta caracter)" |tr " " "-"

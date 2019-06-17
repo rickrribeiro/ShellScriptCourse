@@ -22,3 +22,19 @@ case $numero in
 	"a") echo "a";;
 	*) echo "não é 1, 2 ou 3" ;;
 esac	
+echo
+echo "test  x==n e armazena na var ?"
+test 1 == 1
+echo $?
+test 1 == 0
+echo $?
+
+echo
+echo "for e sequencia"
+for a in $(seq 10);
+do
+echo $a;
+done
+
+
+while

@@ -1,0 +1,10 @@
+read -p "digite a: " $a
+read -p "digite b: " $b
+
+if["$a" -gt "$b]"
+ then
+	echo "$a>$b"
+
+else
+	echo"$b>$a"
+fi

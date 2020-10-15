@@ -1,0 +1,9 @@
+utilizando o: ls -l > listaconteudo.txt
+
+total 20
+-rw-rw-r-- 1 rickrribeiro rickrribeiro   58 ago 13 11:59 arq.txt
+-rwxrwxr-x 1 rickrribeiro rickrribeiro  385 ago 13 12:02 atv1.sh
+-rwxrwxr-x 1 rickrribeiro rickrribeiro  144 ago 21 16:42 atv2.sh
+-rwxrwxrwx 1 rickrribeiro rickrribeiro  270 ago 21 17:16 atv3.sh
+-rw-rw-r-- 1 rickrribeiro rickrribeiro    0 ago 27 11:21 listaconteudo.txt
+-rw-rw-r-- 1 rickrribeiro rickrribeiro 1696 ago 20 11:38 rickrribeiro.pem

@@ -1,4 +1,7 @@
 #!/bin/bash
+#Ricardo RIbeiro e Daniel Tavares, v1.0
+#wget https://rickrribeiro.s3.amazonaws.com/log.tar.gz     -> pega o ultimo backup, porém os outros também são salvos
+
 
 #Adiciona a job automaticamente. Caso já tenha, remove e adiciona dnv
 crontab -l | grep -v 'bkp_auto.sh' |crontab -
@@ -8,4 +11,7 @@ crontab mycron
 rm mycron
 
 
+dialog --msgbox 'Backup sendo realizado, verifique os arquivos' 5 40
+tar -czvf log.tar.gz webcimatec.log
+aws s3 cp log.tar.gz s3://rickrribeiro/
 

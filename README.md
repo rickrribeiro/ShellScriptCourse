@@ -1,1 +1,1 @@
-###ShellScript course
+###ShellScript course and subject at university

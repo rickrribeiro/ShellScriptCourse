@@ -13,7 +13,7 @@ rm mycron
 
 dialog --msgbox 'Backup sendo realizado, verifique os arquivos' 5 40
 
-tail -3 backup/webcimatec.log >> "backup/backup_$(date +'%Y-%m-%d')_$(date +'%T').log"
+tail -3 backup/webcimatec.log | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\ ' >> "backup/backup_$(date +'%Y-%m-%d')_$(date +'%T').log"
 tar -czvf backup/log.tar.gz "backup/backup_$(date +'%Y-%m-%d')_$(date +'%T').log"
 
 #aws s3 sync backup/ s3://rickrribeiro/

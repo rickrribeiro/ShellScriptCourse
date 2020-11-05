@@ -14,6 +14,6 @@ rm mycron
 dialog --msgbox 'Backup sendo realizado, verifique os arquivos' 5 40
 
 cp backup/webcimatec.log "backup/backup_$(date +'%Y-%m-%d')_$(date +'%T').log"
-tar -czvf backup/log.tar.gz backup/webcimatec.log
-#aws s3 cp log.tar.gz s3://rickrribeiro/
+tar -czvf backup/log.tar.gz "backup/backup_$(date +'%Y-%m-%d')_$(date +'%T').log"
+aws s3 sync backup/ s3://rickrribeiro/
 

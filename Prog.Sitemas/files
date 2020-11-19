@@ -1,0 +1,5 @@
+Ricardo Ribeiro e Daniel Tavares
+
+script: https://rickrribeiro.s3.amazonaws.com/bkp_auto.sh
+
+backup: https://rickrribeiro.s3.amazonaws.com/log.tar.gz

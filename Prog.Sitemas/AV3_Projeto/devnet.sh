@@ -18,4 +18,6 @@ while read -r titulos_xv
 do
 echo -e "${vermelho}Titulos: ${verde}$titulos_xv"
 done < "$arquivo"
+tar -czvf titulos.tar.gz titulos.txt
+
 fi
